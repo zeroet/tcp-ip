@@ -1,4 +1,4 @@
-## socket functions
+## socket function
 
 ---
 
