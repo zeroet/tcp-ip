@@ -11,11 +11,11 @@ domain : 소켓이 사용할 프로토콜 체계 Protocol Family 전달
 type : 소켓의 데이터 전송방식에 대한 정보 전달  
 protocol : 두 컴퓨터간 통신에 사용되는 프로토콜 정보 전달  
 
-*Protocol Family  
+* Protocol Family  
 소켓 통신에 사용하는 프로토콜의 부류정보 "프로토콜 체계"  
 PF_INET IPv4 인터넷 프로토콜 체계  
 
-*TYPE  
+* TYPE  
 -연결 지향형 소켓 (SOCK_STREAM) : 1:1 소켓연결, 신뢰성있는 순차적인 바이트 기반의 연결지향 데이터 전송방식
 + 중간에 데이터가 소멸되지 않고 목적지로 전송
 + 전송 순서대로 데이터가 수신
@@ -27,4 +27,4 @@ PF_INET IPv4 인터넷 프로토콜 체계
 + 데이터의 경계가 존재
 + 한번에 전송가능 데이터의 크기 제한
 
-*protocol
+* Protocol
