@@ -19,6 +19,6 @@ int inet_aton(const char* string, struct in_addr* addr);
 string : 변환할 IP 주소를 담고있는 문자열 주소값
 addr : 변환된 정보를 저장할 in_addr구조체 변수의 주소값
 
-** inet_addr 함수의 경우 sockaddr_in에 선언된 in_addr 구조체 변수에 대입하는 과정을 거쳐야하지만, inet_aton의 경우 대입과정이 필요없다.**
+**inet_addr 함수의 경우 sockaddr_in에 선언된 in_addr 구조체 변수에 대입하는 과정을 거쳐야하지만, inet_aton의 경우 대입과정이 필요없다.**
 
 
