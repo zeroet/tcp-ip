@@ -43,5 +43,11 @@ struct in_addr
 - sin_addr : 32비트의 IP주소정보를 저장한다 **네트워크 바이트 순서** 로 저장해야한다 unit32_t 32비트 정수자료형
 - sin_zero : sockaddr_in 의 크기를 구조체 sockaddr 과 일치 시키기위해 삽입된 의미없는 멤버. !반드시 0으로 채워야한다. **sa_data[14]바이트를 맞추기위한 값**
 
+# Byte Order && Network byte order
 
+Network Byte Order = Big-endian (0x1234)  
+h(host) to n(network) s(short)//l(long)
+Change short type date host to network  
+Short = 2byte Port number  
+Long = 4byte IP number
 
