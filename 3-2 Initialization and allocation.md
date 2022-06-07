@@ -22,3 +22,10 @@ addr : 변환된 정보를 저장할 in_addr구조체 변수의 주소값
 **inet_addr 함수의 경우 sockaddr_in에 선언된 in_addr 구조체 변수에 대입하는 과정을 거쳐야하지만, inet_aton의 경우 대입과정이 필요없다.**  
 
 
+```
+#include <arpa/inet.h>
+
+char *inet_ntoa(struct in_addr adr);
+```
+=> 성공시 변환된 문자열의 주소값, 실패시 -1
+ip정보를 스트링 값으로 변환// **함수 자체 할당이기 때문에 값을 복사해두는것이 좋다**
