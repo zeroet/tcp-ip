@@ -1,3 +1,5 @@
+# Bind() 소켓 주소 할당
+
 ```
 #include <sys/socket.h>
 int bind(int sockfd, struct sockaddr *myaddr, socklen_t addrlen);
