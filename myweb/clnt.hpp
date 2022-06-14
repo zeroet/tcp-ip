@@ -5,18 +5,15 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
-class server
+class client
 {
 public:
-    server(std::string portnumber);
-    //server(const server& src);
-    ~server();
-
-    void error_handling(const std::string &message);
+    client(std::string ip, std::string portnumber);
+    ~client();
 
 private:
     std::string _portNumber;
     int _servSock;
     int _clntSock;
 
-};
+}
