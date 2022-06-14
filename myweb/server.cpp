@@ -32,11 +32,11 @@ server::server (std::string portnumber) : _portNumber(portnumber)
     std::cout << "Server Open Port : " << portnumber << std::endl;
     
     //epoll for multi clnt
-    // while(1)
-    // {
-    //     clnt_addr_size = sizeof(clnt_addr);
-    //     this->_clntSock = accept(_servSock, (struct sockaddr*)&clnt_addr, &clnt_addr_size);
-    //     if (this->_clntSock == -1)
-    //         error_handling("accept() error");
-    // }
+    while(1)
+    {
+        clnt_addr_size = sizeof(clnt_addr);
+        this->_clntSock = accept(_servSock, (struct sockaddr*)&clnt_addr, &clnt_addr_size);
+        if (this->_clntSock == -1)
+            error_handling("accept() error");
+    }
 }
